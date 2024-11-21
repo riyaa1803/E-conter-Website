@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage4.master.cs" Inherits="MasterPage4" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    
+    .center 
+    {
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="height: 111px">
+    <form id="form1" runat="server">
+<div class="center">    
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/College Logo.jpg" Height="114px" Width="748px" />
+        
+        </div>
+    
+        <table class="auto-style2">
+            <tr>
+                <td Style="width:300px">
+                     <nav>
+                    <ul>
+                        <li><a href="AdminHomePage.aspx">Home</a></li><br>
+                         <li><a href="StudentInfo.aspx">Student INFO</li><br>
+                        <li>Forms INFO</li><br>
+                        <nav id="sub-nav">
+                        <ul>
+                            <li><a href="IDCardInfo.aspx">ID Card Form INFO</li><br>
+                            <li><a href="LibraryInfo.aspx">Library Card Form INFO</li><br>
+                             <li><a href="ATKTFormInfo.aspx">ATKT Form INFO</li><br>
+                            </ul>
+                            </nav>
+                         <li><a href="Result.aspx">Result</li><br>
+                         <li><a href="Reminder.aspx">Reminder</li><br>
+                        </ul>
+                    </nav>  
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        
+        
+    
+    </form>
+</body>
+</html>

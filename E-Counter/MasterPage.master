@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    
+    .center
+    {
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="height: 194px" bgcolor="#DADBDD">
+    <form id="form1" runat="server">
+    <div class="center">  
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/College Logo.jpg" Height="114px" Width="748px" />
+        </div>
+        
+    
+        <table class="auto-style2">
+            <tr>
+                <td Style="width:300px">
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        
+        
+    
+    </form>
+</body>
+</html>
